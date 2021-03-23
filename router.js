@@ -4,6 +4,17 @@ class Router {
         this._loadInitialRoute()
     }
 
+loadRoute(...urlSegs) {
+     
+    const matchedRoute = this._matchUrlToRoute(urlSegs)
+
+    const url = `/${urlSegs.join('/')}`
+    history.pushState({}, 'It Works', url)
+
+    const routerOutElm = document.getElementById('main')
+    routerOutElm.innerHTML = matchedRoute.template
+}
+
 _matchUrlToRoute(urlSegs) {
     const matchedRoute = this.routes.find( route => {
         const routePathSegs = route.path.split('/').slice(1)
@@ -13,7 +24,7 @@ _matchUrlToRoute(urlSegs) {
         }
 
         return routePathSegs
-            .every((routePathSegs, i) => routePathSeg === urlSegs[i])
+            .every((routePathSeg, i) => routePathSeg === urlSegs[i])
     })
 
     return matchedRoute

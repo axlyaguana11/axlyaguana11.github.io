@@ -8,84 +8,34 @@
     <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/a-button-blood-type_1f170-fe0f.png">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Axel</a>
+    <header class="header">
+        <nav class="header-nav">
+            <ul class="header-nav-nav-list">
+                <li class="header-nav-list--item">
+                    <a href="/" onclick="router.loadRoute('')">Axel</a>
                 </li>
-                <li>
-                    <a href="/about">About</a>
+                <li class="header-nav-list--item">
+                    <a href="#" onclick="router.loadRoute('about')">About</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <article>
-                <div>
-                    <h1>Axel Yaguana is a Front-End Developer</h1>
-                    <p>Hi, I'm Axel Yaguana, a self-taught front-end developer. I work remotely from home, so my productivity increases and your project gets the best it deserves. My skills are HTML5, CSS3, JavaScript and React. I do some Wordpress too.</p>
-                    <div>
-                        <a href="">Let's Have a Talk</a>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h2>These are Some of my Projects</h2>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="">Huddle</a>
-                                <a href="">Batatabit</a>
-                                <a href="">100tífico</a>
-                                <a href="">LoopStudios</a>
-                                <a href="">Google Clone</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h2>Have a Project in Mind? Let's have a Talk</h2>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h2>You can find me here</h2>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="">Email</a>
-                            </li>
-                            <li>
-                                <a href="">Twitter</a>
-                            </li>
-                            <li>
-                                <a href="">LinkedIn</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <footer>
-            <div>
-                <p>Your project deserves the best. I'll focus on doing so.</p>
-                <div>
-                    <a href="">Start Now</a>
-                </div>
-            </div>
-        </footer>
+    <main class="main" id="main" data-router>
+        
     </main>
-    
+    <footer>
+        <div>
+            <p>Your project deserves the best. I'll focus on doing so.</p>
+            <div>
+                <a href="">Start Now</a>
+            </div>
+        </div>
+    </footer>
 </body>
+    <script src="./router.js"></script>
+    <script src="./routes.js"></script>
+    <script src="./index.js"></script>
 </html>
 
 
-<h1>The World's Greatest Website</h1>
-<p>Made by Axl Yaguana (axlyaguana11)</p>
-<p><img src = 'https://i.imgur.com/35eRLsx.gif' /></p>
 
