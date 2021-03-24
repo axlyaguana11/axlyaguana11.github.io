@@ -38,7 +38,7 @@ const About = () => {
                 <div class="section-article-container--subcontainer">
                     <ul class="section-article-container--list">
                         <li class="section-article-container--list-item">
-                            <a href="">Email</a>
+                            <a href="mailto:axl9809@gmail.com">Email</a>
                         </li>
                         <li class="section-article-container--list-item">
                             <a href="https://twitter.com/axlyaguana11" target="_blank">Twitter</a>
@@ -101,7 +101,7 @@ const Home = () => {
                             <a href="https://axlyaguana11.github.io/huddle-landing/" target="_blank">Huddle</a>  
                         </li>
                         <li class="section-article-container--list-item">
-                            <a href="" target="_blank">Batatabit</a>
+                            <a href="https://axlyaguana11.github.io/batatabit/" target="_blank">Batatabit</a>
                         </li>
                         <li class="section-article-container--list-item">
                             <a href="https://axlyaguana11.github.io/spa-cientifico/" target="_blank">100tífico</a>
