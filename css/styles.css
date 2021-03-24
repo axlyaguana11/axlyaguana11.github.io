@@ -16,9 +16,11 @@ html {
     font-family: 'Lato', sans-serif;
     background-color: var(--main-color);
     color: var(--letters-color);
+    scroll-behavior: smooth;
 }
 
 /* Index template */
+/* Header */
 
 .header {
     width: 100vw;
@@ -27,7 +29,7 @@ html {
 }
 
 .header .header-nav {
-    width: 50%;
+    width: 80%;
     margin: auto auto;
     display: flex;
     font-size: 2.4rem;
@@ -37,14 +39,174 @@ html {
 .header-nav-nav-list {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 .header-nav-list--item {
     list-style: none;
+    margin-right: 24px;
 }
 
 .header-nav-list--item-a {
     text-decoration: none;
     color: var(--letters-color);
+}
+
+.header-nav-list--item-a:hover {
+    color: var(--secondary-color);
+}
+
+/* Dinamic Content */
+
+.main {
+    width: 100vw;
+}
+
+.main-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.main-section-article{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.section-article-container {
+    width: 80%;
+    height: 80%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.h1 {
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+}
+
+.section-article-container--p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-top: 24px;
+}
+
+.section-article-container--subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+}
+
+.section-article-container--a {
+    font-size: 2.4rem;
+    margin-top: 24px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    border: 1px;
+    border-radius: 2px;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+
+.section-article-container--h2 {
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+}
+
+.section-article-container--subcontainer {
+    width: 100%;
+    height: 70%;
+}
+
+
+
+.section-article-container--list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+}
+
+.section-article-container--list-item {
+    list-style: none;
+    font-size: 2.4rem;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    border: 1px;
+    border-radius: 2px;
+    margin-top: 24px;
+    background-color: var(--secondary-color);
+}
+
+.section-article-container--list-special {
+    list-style: none;
+    font-size: 1.8rem;
+    margin-top: 24px;
+}
+
+.section-article-container--list-item:hover {
+    background-color: var(--terciary-color);
+}
+
+.section-article-container--list-item a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* Index template */
+/* Footer */
+
+.footer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    height: 60%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-container-p {
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer-container-box {
+    font-size: 2.4rem;
+    margin-top: 24px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    border: 1px;
+    border-radius: 2px;
+    background-color: var(--secondary-color);
+}
+
+.footer-container-box:hover {
+    background-color: var(--terciary-color);
+}
+
+.footer-container-box--a {
+    text-decoration: none;
+    color: var(--main-color);
 }
